@@ -1,0 +1,13 @@
+#partners-block .owl-nav {
+    display: none;
+}
+
+#partners-block .partners-item {
+    padding: 0px 20px 5px 20px;
+}
+
+#partners-block img {
+    max-height: 80px;
+    width: auto;
+    margin: auto;
+}

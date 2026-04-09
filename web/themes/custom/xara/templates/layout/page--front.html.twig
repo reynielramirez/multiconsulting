@@ -1,0 +1,18 @@
+{% include '@xara/template-parts/header.html.twig' %}
+{% if page.highlighted %}
+  {% include '@thex/template-parts/highlighted.html.twig' %}
+{% endif %}
+<div class="main-wrapper">
+    <div class="main-container">
+      <main id="main" class="main-content front-content">
+        {{ page.home }}
+      </main>
+    {% if front_sidebar and page.sidebar_first %}
+      {% include '@thex/template-parts/sidebar/sidebar_left.html.twig' %}
+    {% endif %}
+    {% if front_sidebar and page.sidebar_second %}
+      {% include '@thex/template-parts/sidebar/sidebar_right.html.twig' %}
+    {% endif %}
+    </div><!--/main-container -->
+</div><!--/main-wrapper -->
+{% include '@xara/template-parts/footer.html.twig' %}

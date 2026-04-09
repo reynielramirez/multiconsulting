@@ -1,0 +1,28 @@
+<!-- View: Contact -->
+
+{% if data %}
+
+	<div id='contact-view' data-aos="fade-right">
+	
+	    {% if data.banner %}
+			<img src="{{ file_url(data.banner) }}" alt="{{ 'Banner'|t }}">
+	    {% endif %}	
+		
+		{# <h2 class="view-title"> {{ 'Contact Us'|t }} </h2> #}
+		<div class="separator"></div>
+
+		<div class="contact-box">
+		
+			<div class="map"> 
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7524.818332111021!2d-99.186286!3d19.437918000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8a96d009e17%3A0x436d88921a83e08f!2sAv.%20Ej%C3%A9rcito%20Nacional%20Mexicano%20373-piso%203%2C%20Chapultepec%20Morales%2C%20Granada%2C%20Miguel%20Hidalgo%2C%2011520%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20M%C3%A9xico!5e0!3m2!1ses!2sus!4v1758118494750!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			
+			<div class='dark-form'>
+				{{ data.form }}
+			</div>
+			
+		</div>
+		
+	</div>
+  
+{% endif %}	

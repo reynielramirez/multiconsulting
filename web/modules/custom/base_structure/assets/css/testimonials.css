@@ -1,0 +1,77 @@
+#testimonials-block {  
+    background: var(--border);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top: unset;
+}
+
+#testimonials-block .box-item {
+    background-color: #ffffff;
+    flex: 1 0 300px;   
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 0 11px -3px var(--secondary);
+}
+
+#testimonials-block .box-item:hover {  
+    box-shadow: 0 0 8px 1px var(--primary);
+}
+
+#testimonials-block .box-item h4 {
+  color: var(--secondary);
+  font-size: 18px;
+}
+
+#testimonials-block .box-item h4,
+#testimonials-block .box-item sup,
+#testimonials-block .box-item sub {
+  font-weight: 300;
+}
+
+#testimonials-block .box-item .box-top {
+    display: flex;
+    flex-direction: row;
+}
+
+#testimonials-block .box-item .icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 16px;
+}
+
+#testimonials-block .box-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13px;
+    border: 1px solid var(--border);
+}
+
+#testimonials-block .box-item h6 {
+    font-size: 14px;
+}
+
+#testimonials-block .box-item h6.date {
+    color: gray;
+}
+
+#testimonials-block .box-item h6.date::before {
+    font-family: 'FontAwesome';
+    content: "\f133";
+    padding-right: 5px;
+    color: gray;
+}
+
+#testimonials-block .box-item p {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+#testimonials-block .button {
+    font-size: 16px;
+}
+
+#testimonials-block .owl-nav {
+    display: none;
+}

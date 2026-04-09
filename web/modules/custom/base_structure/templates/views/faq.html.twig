@@ -1,0 +1,31 @@
+<!-- View: News -->
+
+{% if data.items %}
+
+	<div id='faq-view' data-aos="fade-right">
+	
+	    {% if data.banner %}
+			<img src="{{ file_url(data.banner) }}" alt="{{ 'Banner'|t }}">
+	    {% endif %}	
+		
+		{# <h2 class="view-title"> {{ 'FAQ'|t }} </h2> #}
+		<div class="separator"></div>
+
+		<div class='faq-items view-content container'>
+
+			{% for item in data.items %}	
+
+				<details>
+					<summary> {{ item.get('title').value }} </summary>
+					<div class="faq-description">
+						{{ item.get('field_rich_description').value|raw }}
+					</div>
+				</details>
+								
+			{% endfor %}
+
+		</div>
+
+	</div>
+  
+{% endif %}	

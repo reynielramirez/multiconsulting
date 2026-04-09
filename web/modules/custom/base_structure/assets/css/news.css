@@ -1,0 +1,16 @@
+#news-block img {
+	height: 200px;
+  	object-fit: cover;
+}
+
+#news-block .box:hover img {
+	box-shadow: 1px 0px 9px 3px;
+}
+   
+#news-block .items, 
+#news-view .items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  gap: 1rem;
+}

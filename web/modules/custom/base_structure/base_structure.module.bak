@@ -1,0 +1,228 @@
+<?php
+
+	function base_structure_theme($existing, $type, $theme, $path) {
+	  return [
+		'logo_block' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'blocks/logo',
+		],
+		'banner_block' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'blocks/banner',
+		],
+		'socials_block' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'blocks/socials',
+		],
+		'products_block' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'blocks/products',
+		],
+		'services_block' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'blocks/services',
+		],
+		'news_block' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'blocks/news',
+		],
+		'testimonials_block' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'blocks/testimonials',
+		],
+		'methodology_block' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'blocks/methodology',
+		],
+		'partners_block' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'blocks/partners',
+		],
+		'values_block' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'blocks/values',
+		],
+		'clients_block' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'blocks/clients',
+		],
+		'links_block' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'blocks/links',
+		],
+		'contacts_block' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'blocks/contacts',
+		],
+		'about_view' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'views/about',
+		],
+		'products_services_view' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'views/products_services',
+		],
+		'products_view' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'views/products',
+		],
+		'services_view' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'views/services',
+		],
+		'news_view' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'views/news',
+		],
+		'faq_view' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'views/faq',
+		],
+		'contact_view' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'views/contact',
+		],
+		'page_403_view' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'views/page_403',
+		],
+		'page_404_view' => [ 
+		  'variables' => [
+				'titulo' =>'Titulo por defecto',
+				'descripcion' => 'Descripción por defecto',
+				'path' => $path,
+				'data' => NULL,
+				'attached' => NULL
+			],
+		  'template' => 'views/page_404',
+		],
+	  ];
+	  
+	}
+

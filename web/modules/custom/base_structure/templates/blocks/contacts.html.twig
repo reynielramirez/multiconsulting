@@ -1,0 +1,19 @@
+
+{% if data.address or data.phone or data.email %}
+
+    <div id="contacts-block">
+
+        <h2 class="block-title">{{ 'Contact Us'|t }}</h2>
+
+        <div class="contact-items">
+            <img src="{{ file_url(data.logo) }}" alt="{{ 'Contact'|t }}">
+            <h4 class="contact-address"> {{ data.address }} </h4>
+            <h4 class="contact-phone"> {{ 'Phone:'|t }} {{ data.phone }} </h4>
+            <h4 class="contact-email"> {{ 'Email:'|t }} {{ data.email }} </h4>
+        </div>
+        
+        <a class="button" href="/Contacto">{{ 'Send message'|t  }}</a>
+
+    </div>
+
+{% endif %}	

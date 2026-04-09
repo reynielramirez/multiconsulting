@@ -1,0 +1,38 @@
+#clients-block .owl-nav {
+    display: none;
+}
+
+#clients-block .partners-item {
+    padding: 0px 20px 5px 20px;
+}
+
+#clients-block .clients-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clients-block button {
+    border: unset;
+    background: unset;
+}
+
+#clients-block img {
+    max-height: 80px;
+    width: auto;
+    margin: auto;
+}
+
+.nire-dialog-header {
+    background-color: var(--border) !important;
+}
+
+.nire-dialog-header {
+    border-bottom: 1px solid #00000045;
+}
+
+.nire-dialog-close {
+    opacity: 0.6 !important;
+}
+
+

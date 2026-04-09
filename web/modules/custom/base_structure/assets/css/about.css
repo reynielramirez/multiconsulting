@@ -1,0 +1,56 @@
+#about-view .svg-icon {
+    height: 50px;
+    width: auto;
+}
+
+#about-view .about-description {
+    margin-bottom: 52px;
+    text-align: center;
+}
+
+/*#about-view .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
+    grid-gap: 1rem;
+    gap: 1rem;
+}*/
+
+#about-view .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#about-view .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 32%;
+	flex: 300px;
+    padding: 10px;
+    position: relative;
+}
+
+#about-view .items .item::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+#about-view .items .item:hover::before {
+  transform: scaleX(1);
+  box-shadow: var(--shadow);
+  border-radius: 6px;
+}
+
+#about-view h3 {
+    padding-bottom: 5px;
+}

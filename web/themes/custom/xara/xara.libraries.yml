@@ -1,0 +1,116 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/xara.js: {}
+  dependencies:
+    - xara/aos-library
+    - xara/owl-carousel-library
+    - xara/fontawesome-library
+
+# Google Fonts from local
+googlefontslocal:
+  css:
+    base:
+      css/fonts.css: {}
+
+# Theme settings page 
+theme-settings:
+  version: VERSION
+  css:
+    theme:
+      css/theme-settings.css: {}
+
+# Slider
+slider:
+  version: 2.1.2
+  js:
+    js/slider.js: {}
+  dependencies:
+    - core/jquery
+    - xara/morphist-library
+  css:
+    component:
+      css/slider.css: {}
+
+# Library: jquery
+# -----------------------------------------------------------
+
+jquery-library:
+  version: VERSION
+  js:
+     /libraries/jquery/js/jquery.min.js: {}
+     /libraries/jquery/js/jquery.mousewheel.min.js: {}
+  dependencies:
+    - core/drupal
+     
+# AOS
+aos-library:
+  version: 2.3.1
+  css:
+    component:
+      lib/aos-v2.3.1/dist/aos.css: {}
+  js:
+    lib/aos-v2.3.1/dist/aos.js: {}
+  dependencies:
+    - xara/jquery-library
+  
+# Library: Owl Carousel
+# -----------------------------------------------------------
+
+owl-carousel-library:
+  version: VERSION
+  css:
+    theme:
+      /libraries/owl.carousel/css/owl.carousel.css: {}
+      /libraries/owl.carousel/css/owl.theme.default.css: {}
+  js:
+     /libraries/owl.carousel/js/owl.carousel.js: {}
+  dependencies:
+    - xara/jquery-library
+    
+# Library: Nire Accordion
+# -----------------------------------------------------------
+
+nire-accordion-library:
+  version: VERSION
+  css:
+    theme:
+      /libraries/nire_accordion/css/nire_accordion.css: {}
+  js:
+     /libraries/nire_accordion/js/nire_accordion.js: {}
+  dependencies:
+    - xara/jquery-library
+
+# Library: Morphist
+# -----------------------------------------------------------
+
+morphist-library:
+  version: VERSION
+  css:
+    theme:
+      lib/morphist-v2.1.2/css/morphist.css: {}
+  js:
+    lib/morphist-v2.1.2/js/morphist.js: {}
+  dependencies:
+    - xara/jquery-library
+
+# Library: Fontawesome
+# -----------------------------------------------------------   
+fontawesome-library:
+  version: VERSION
+  css:
+    theme:
+      lib/fontawesome-free-6.5.2-web/css/all.min.css: {}
+   
+# Library: Nire Dialog v2.0 
+# -----------------------------------------------------------
+nire-dialog-library:
+  version: VERSION
+  css:
+    theme:
+      /libraries/nire-dialog-v2.0/css/nire-dialog-v2.0.css: {}
+  js:
+     /libraries/nire-dialog-v2.0/js/nire-dialog-v2.0.js: {}

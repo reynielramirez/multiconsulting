@@ -1,0 +1,99 @@
+#contacts-block img {
+    padding: 10px;
+    width: 80%;
+}
+
+#contacts-block .contact-items,
+#contact-view .contact-items {
+    /*background: var(--primary);
+    color: white;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;*/
+    background: #179f7952;
+    
+    background: #ffffff52;
+    color: white;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+}
+
+#contacts-block h4,
+#contact-view h4 {
+    /*font-size: 1rem;
+    color: #106e54;
+    padding: 5px 5px 5px 5px;*/
+
+    font-size: 0.9rem;
+    color: #0f5a45;
+    padding: 7px 8px 7px 14px;
+}
+
+#contacts-block .contact-email,
+#contact-view .contact-email {
+    padding-bottom: 10px;
+}
+
+#contacts-block .button,
+#contact-view .button {
+    line-height: 1.6;
+    width: 150px;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    background-color: unset;
+    color: var(--primary) !important;
+    box-shadow: 0 0 4px 1px var(--primary) !important;
+    line-height: 1.2;
+    text-align: center;
+} 
+
+#contacts-block .button:hover,
+#contact-view .button:hover {
+    background-color: var(--primary);
+    color: white !important;
+    border: 2px solid var(--primary);
+}
+
+#contact-view .block-title {
+    display: none;
+}
+
+#contact-view .contact-box {
+    display: flex;
+}
+
+#contact-view .map {
+    padding: 40px 0 40px 40px;
+    border-radius: 10px 0 0 10px;
+    background: var(--border);
+}
+
+#contact-view .map iframe {
+    border: 0;
+    box-shadow: 0 0 4px 1px var(--primary) !important;
+    border-radius: 6px;
+    margin-right: 8px;
+}
+
+#contact-view .dark-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-view fieldset {
+    border: unset;
+}
+
+#contact-view #block-feedback-form {
+  background: var(--primary);
+  padding: 20px 20px 15px 40px;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  background: var(--border);
+  color: black;
+}
+
+
