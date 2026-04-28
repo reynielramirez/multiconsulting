@@ -24,7 +24,7 @@
 								<img class="svg-icon" src={{ file_url(item.get('field_image').entity.uri.value) }} alt="service name">
 							</div>
 							<h3> {{ item.get('title').value }} </h3>
-							<p class="summary"> {{ item.get('field_description').value }} </p>
+							<p class="summary"> {{ item.get('field_rich_description').value|raw }} </p>
 						</div>
 
 					{% endfor %}
