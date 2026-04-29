@@ -1,6 +1,7 @@
 <!-- Block: Banner -->
 
 {% if data %}
+{% set has_logo = site_logo is not empty %}
 
 	<div id='banner-block'>
 	
@@ -13,6 +14,17 @@
           {% endfor %}
           
       </div>
+
+      <!-- Logo y slogan FUERA del slider -->
+    {% if has_logo %}
+        <div class="carousel-logo">
+            <img src="{{ file_url(site_logo) }}" alt="Logo">
+        </div>
+    {% endif %}
+
+    <div class="carousel-slogan">
+        <p>{{ slogan }}</p>
+    </div>
 	
 	</div>
   

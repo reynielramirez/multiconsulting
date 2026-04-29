@@ -17,7 +17,10 @@
 				'titulo' =>'Titulo por defecto',
 				'descripcion' => 'Descripción por defecto',
 				'path' => $path,
-				'data' => NULL,
+				'data' => NULL,				
+				'slogan' => NULL,
+				'site_logo' => NULL,
+				'site_name' => NULL,
 				'attached' => NULL
 			],
 		  'template' => 'blocks/banner',
