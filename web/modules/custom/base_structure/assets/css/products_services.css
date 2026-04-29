@@ -73,3 +73,7 @@
     text-align: left;
 }
 
+p.link-read-more{
+    text-align: right !important;
+}
+
