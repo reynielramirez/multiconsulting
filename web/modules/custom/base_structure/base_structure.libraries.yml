@@ -111,5 +111,11 @@ error-styling:
   version: VERSION
   css:
     theme:
-      assets/css/error.css: {}  
+      assets/css/error.css: {}
+
+site-section-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/site_section.css: {}
       
