@@ -114,3 +114,29 @@ nire-dialog-library:
       /libraries/nire-dialog-v2.0/css/nire-dialog-v2.0.css: {}
   js:
      /libraries/nire-dialog-v2.0/js/nire-dialog-v2.0.js: {}
+
+gallery-modal:
+  version: VERSION
+  css:
+    theme:
+      css/gallery-modal.css: {}
+  js:
+    js/gallery-modal.js: {}
+
+product:
+  version: VERSION
+  css:
+    theme:
+      css/product.css: {}  
+
+service:
+  version: VERSION
+  css:
+    theme:
+      css/service.css: {} 
+
+product-service:
+  version: VERSION
+  css:
+    theme:
+      css/product-service.css: {}  

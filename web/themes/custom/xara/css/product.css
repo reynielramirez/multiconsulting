@@ -1,0 +1,9 @@
+.product-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 75px;
+}
+.read-more{
+    font-size: 15px;
+}
