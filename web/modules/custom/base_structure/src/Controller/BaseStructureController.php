@@ -119,14 +119,32 @@ class BaseStructureController extends ControllerBase {
         $data["banner"] = $service->getConfigURL("products_banner");
 		$data["text"] = $service->getConfigText("products_text");
 
-		$node_ids = Drupal::entityQuery('node')
-            ->condition('type','products')
-            ->condition('langcode',$language)
-            ->condition('status', 1)
-            ->accessCheck(FALSE)
+		$database = \Drupal::database();
+
+		$subquery = $database->select('node__field_productos', 'f');
+		$subquery->addField('f', 'field_productos_target_id');
+		$subquery->distinct();
+		$subquery->join('node_field_data', 'padre', 'f.entity_id = padre.nid');
+		$subquery->join('node_field_data', 'hijo', 'f.field_productos_target_id = hijo.nid');
+		$subquery->condition('padre.status', 1);
+		$subquery->condition('padre.type', 'products');
+		$subquery->condition('hijo.status', 1);
+		$subquery->condition('hijo.type', 'products');
+
+		$subproductos = $subquery->execute()->fetchCol();
+
+		$query = \Drupal::entityQuery('node')
+			->condition('type', 'products')
+			->condition('status', 1)
+			->accessCheck(FALSE)
 			->addTag('pager')
-			->pager(9)
-            ->execute();
+			->pager(9);
+
+		if ($subproductos) {
+			$query->condition('nid', $subproductos, 'NOT IN');
+		}
+
+		$node_ids = $query->execute();
 
 		if(!empty($node_ids)){
             $nodes = Node::loadMultiple($node_ids);
@@ -159,14 +177,32 @@ class BaseStructureController extends ControllerBase {
         $data["banner"] = $service->getConfigURL("services_banner");
 		$data["text"] = $service->getConfigText("services_text");
 
-		$node_ids = Drupal::entityQuery('node')
-            ->condition('type','services')
-            ->condition('langcode',$language)
-            ->condition('status', 1)
-            ->accessCheck(FALSE)
+		$database = \Drupal::database();
+
+		$subquery = $database->select('node__field_servicios', 'f');
+		$subquery->addField('f', 'field_servicios_target_id');
+		$subquery->distinct();
+		$subquery->join('node_field_data', 'padre', 'f.entity_id = padre.nid');
+		$subquery->join('node_field_data', 'hijo', 'f.field_servicios_target_id = hijo.nid');
+		$subquery->condition('padre.status', 1);
+		$subquery->condition('padre.type', 'services');
+		$subquery->condition('hijo.status', 1);
+		$subquery->condition('hijo.type', 'services');
+
+		$subservicios = $subquery->execute()->fetchCol();
+
+		$query = \Drupal::entityQuery('node')
+			->condition('type', 'services')
+			->condition('status', 1)
+			->accessCheck(FALSE)
 			->addTag('pager')
-			->pager(9)
-            ->execute();
+			->pager(9);
+
+		if ($subservicios) {
+			$query->condition('nid', $subservicios, 'NOT IN');
+		}
+
+		$node_ids = $query->execute();
 
 		if(!empty($node_ids)){
             $nodes = Node::loadMultiple($node_ids);
