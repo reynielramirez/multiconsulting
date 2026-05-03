@@ -17,4 +17,8 @@
 #faq-view summary:hover {
     color: var(--secondary);
 }
+
+#faq-view .pi-text {
+  top: 20%;
+}
     

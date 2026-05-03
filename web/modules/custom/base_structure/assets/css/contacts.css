@@ -97,6 +97,9 @@
   color: black;
 }
 
+#contact-view .pi-text {
+  top: 28%;
+}
 
 
 .map-wrapper {
@@ -151,7 +154,7 @@
   border-radius: 8px;
   border: none;
 }
-.form-item {
+.dark-form .form-item {
     margin-bottom: 0 !important;
 }
 
