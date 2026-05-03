@@ -7,6 +7,12 @@
 		{% if data.banner %}
 			<img src="{{ file_url(data.banner) }}" alt="{{ 'Banner'|t }}">
 	    {% endif %}	
+
+		{% if data.banner_text %}
+		<div class="pi-text">
+			<p>{{ data.banner_text }}</p>
+		</div>
+		{% endif %}
 		
 		<div class="container">
 

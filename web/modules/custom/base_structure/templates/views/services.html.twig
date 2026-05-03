@@ -8,6 +8,12 @@
 			<img src="{{ file_url(data.banner) }}" alt="{{ 'Banner'|t }}">
 	    {% endif %}	
 
+		{% if data.text %}
+		<div class="pi-text">
+			<p>{{ data.text }}</p>
+		</div>
+		{% endif %}
+
 		{# <h2 class="view-title"> {{ 'Services'|t }} </h2> #}
 		<div class="separator"></div>
 
