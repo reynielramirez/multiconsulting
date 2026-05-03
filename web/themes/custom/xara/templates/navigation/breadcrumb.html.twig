@@ -1,0 +1,71 @@
+
+{% if breadcrumb %}
+  <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+    <ol class="breadcrumb-items">
+    {% set last_text = '' %}
+    {% for item in breadcrumb %}
+      {% set current_text = item.text %}
+        {% if current_text != last_text %}
+          <li class="breadcrumb-item">
+            {% if item.url %}
+              <a href="{{ item.url }}">{{ item.text }}</a><span><i class="icon-angle-right"></i></span>
+            {% else %}
+              {{ item.text }}
+            {% endif %}
+          </li>
+        {% endif %}
+      {% set last_text = current_text %}
+    {% endfor %}
+    </ol>
+  </nav>
+{% endif %}
+
+<!-- {#
+/**
+ * @file
+ * Plantilla que soporta arrays tipo 'text' y renderizables de Drupal.
+ */
+#}
+{% if breadcrumb %}
+  <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</h2>
+    <ol class="breadcrumb-items">
+      {# Procesamos cada elemento para obtener texto plano #}
+      {% set items_processed = [] %}
+      {% for item in breadcrumb %}
+        {% if item is iterable %}
+          {% if item.text is defined %}
+            {# Es el formato añadido por THEX #}
+            {% set text = item.text %}
+          {% else %}
+            {# Es array renderizable de Drupal #}
+            {% set text = item|render|striptags|trim %}
+          {% endif %}
+        {% else %}
+          {% set text = item|striptags|trim %}
+        {% endif %}
+        {% set items_processed = items_processed|merge([text]) %}
+      {% endfor %}
+      
+      {# Ahora mostramos sin duplicados consecutivos #}
+      {% set last_text = '' %}
+      {% for item in breadcrumb %}
+        {% set current_text = items_processed[loop.index0] %}
+        {% if current_text != last_text %}
+          <li class="breadcrumb-item">
+            {# Renderizamos el original respetando su tipo #}
+            {% if item is iterable and item.text is defined %}
+              {{ item.text }}
+            {% else %}
+              {{ item }}
+            {% endif %}
+            {% if not loop.last and current_text != items_processed[loop.index0 + 1]|default('') %}
+              <span><i class="icon-angle-right"></i></span>
+            {% endif %}
+          </li>
+        {% endif %}
+        {% set last_text = current_text %}
+      {% endfor %}
+    </ol>
+  </nav>
+{% endif %} -->

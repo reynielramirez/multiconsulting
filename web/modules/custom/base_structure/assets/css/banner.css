@@ -17,7 +17,7 @@
 }
 
 .carousel-logo img {
-    max-width: 200px; /* Ajusta según necesites */
+    max-width: 200px !important; /* Ajusta según necesites */
     height: auto;
 }
 /* Slogan superpuesto - centrado abajo */
