@@ -1,26 +1,42 @@
-<footer class="site-footer footer">
-{% if page.footer_top %}
-  {% include '@thex/template-parts/footer/footer-top.html.twig' %}
-{% endif %}
-{% if page.footer_one or page.footer_two or page.footer_three or page.footer_four %}
-  {% include '@thex/template-parts/footer/footer-blocks.html.twig' %}
-{% endif %}
-{% if page.footer_bottom_left or page.footer_bottom_right %}
-  {% include '@thex/template-parts/footer/footer-bottom-blocks.html.twig' %}
-{% endif %}
-{% if copyright_text or page.footer_bottom_last %}
-  <footer class="footer-bottom footer">
-    <div class="container">
-      <div class="footer-bottom-container">
-        {% if copyright_text %}
-          {% include '@thex/template-parts/footer/footer-copyright.html.twig' %}
-        {% endif %}
-        {% include '@thex/template-parts/footer/footer-bottom-last.html.twig' %}
-        {{ page.copyright }}
-      </div><!-- /footer-bottom-container -->
-    </div><!-- /container -->
-  </footer><!-- /footer-bottom -->
-{% endif %}
+
+<footer id="contacto" class="footer clear">
+  {% if page.footer_one and page.footer_two %}
+    <!-- Sección dividida en dos -->
+    <div class="full-container split-section">
+        <div class="col footer-one">
+          {% if page.footer_one %}
+            {{ page.footer_one }}
+          {% endif %}
+        </div>
+        <div class="col footer-two">
+          {% if page.footer_two %}
+            {{ page.footer_two }}
+          {% endif %}
+        </div>
+    </div>
+  {% endif %}
+    <!-- Sección de una sola columna full container -->
+    <div class="full-container single-section">
+      {% if page.footer_three %}
+			  {% if page.footer_three %}
+				  {{ page.footer_three }}
+			  {% endif %}
+      {% endif %} {# end if for footer three #} 
+    </div>
+
+  {% if copyright_text or page.footer_bottom_last %}
+    <div class="footer-bottom footer">
+      <div class="container">
+        <div class="footer-bottom-container">
+          {% if copyright_text %}
+            {% include '@thex/template-parts/footer/footer-copyright.html.twig' %}
+          {% endif %}
+          {% include '@thex/template-parts/footer/footer-bottom-last.html.twig' %}
+          {{ page.copyright }}
+        </div><!-- /footer-bottom-container -->
+      </div><!-- /container -->
+    </div><!-- /footer-bottom -->
+  {% endif %}
 </footer>
 {% if scrolltotop_on %}
   <div id="scrolltop" class="scrolltop"><i class="icon-arrow-up"></i></div>
