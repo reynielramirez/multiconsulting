@@ -26,7 +26,7 @@
     padding: 5px 5px 5px 5px;*/
 
     font-size: 0.9rem;
-    color: #0f5a45;
+    color: white;
     padding: 7px 8px 7px 14px;
 }
 
@@ -49,11 +49,22 @@
     text-align: center;
 } 
 
-#contacts-block .button:hover,
+#contacts-block .button:hover{
+    background-color: white !important;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
 #contact-view .button:hover {
     background-color: var(--primary);
     color: white !important;
     border: 2px solid var(--primary);
+}
+#contacts-block a {
+    color: white;
+}
+
+#contacts-block a:hover {
+    color:var(--primary);
 }
 
 #contact-view .block-title {
