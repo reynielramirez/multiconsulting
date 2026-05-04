@@ -122,4 +122,10 @@ site-section-styling:
   css:
     theme:
       assets/css/site_section.css: {}
+
+subscribe-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/subscribe.css: {}
       
