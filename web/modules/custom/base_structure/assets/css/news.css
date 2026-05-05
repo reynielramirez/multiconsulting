@@ -10,11 +10,15 @@
 #news-block .items, 
 #news-view .items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
   grid-gap: 1rem;
   gap: 1rem;
 }
 
-/* #news-view .pi-text {
-  top: 27%;
-} */
+/* Para pantallas menores a 700px, que se muestre 1 columna */
+@media (max-width: 700px) {
+  #news-block .items, 
+  #news-view .items {
+    grid-template-columns: 1fr;
+  }
+}
