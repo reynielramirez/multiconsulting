@@ -3,16 +3,18 @@
 {% if data %}
 {% set has_colaboradores = data.colaboradores is not empty %}
 	<div id='about-view' data-aos="fade-right">
-	
-		{% if data.banner %}
-			<img src="{{ file_url(data.banner) }}" alt="{{ 'Banner'|t }}">
-	    {% endif %}	
 
-		{% if data.banner_text %}
-		<div class="pi-text">
-			<p>{{ data.banner_text }}</p>
+		<div class="banner-container">
+			{% if data.banner %}
+				<img src="{{ file_url(data.banner) }}" alt="{{ 'Banner'|t }}">
+			{% endif %}	
+
+			{% if data.banner_text %}
+			<div class="pi-text">
+				<p>{{ data.banner_text }}</p>
+			</div>
+			{% endif %}
 		</div>
-		{% endif %}
 		
 		<div class="container">
 

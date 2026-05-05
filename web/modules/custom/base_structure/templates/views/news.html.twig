@@ -4,15 +4,17 @@
 
 	<div id='news-view' data-aos="fade-right">
 	
-		{% if data.banner %}
-			<img src="{{ file_url(data.banner) }}" alt="{{ 'Banner'|t }}">
-	    {% endif %}
-		
-		{% if data.text %}
-		<div class="pi-text">
-			<p>{{ data.text }}</p>
+		<div class="banner-container">
+			{% if data.banner %}
+				<img src="{{ file_url(data.banner) }}" alt="{{ 'Banner'|t }}">
+			{% endif %}	
+
+			{% if data.text %}
+			<div class="pi-text">
+				<p>{{ data.text }}</p>
+			</div>
+			{% endif %}
 		</div>
-		{% endif %}
 
 		{# <h2 class="view-title"> {{ 'Our Blog'|t }} </h2> #}
 		<div class="separator"></div>
