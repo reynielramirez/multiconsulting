@@ -87,6 +87,10 @@ fieldset {
   color: var(--color-heading);
 }
 
+.main-wrapper {
+  padding: 0;
+}
+
 .block-title,
 .view-title {
   margin-bottom: 0.8rem;
