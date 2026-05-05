@@ -243,7 +243,7 @@ class BaseStructureController extends ControllerBase {
 			->sort("field_date","DESC")
             ->accessCheck(FALSE)
 			->addTag('pager')
-			->pager(9)
+			->pager(6)
             ->execute();
 
 		if(!empty($node_ids)){
