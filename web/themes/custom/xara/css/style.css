@@ -1063,6 +1063,29 @@ img.svg-icon {
   font-weight: 700;
 }
 
+/* Estado normal */
+.button {
+  background-color: var(--light);
+  border: 2px solid var(--primary);
+  border-radius: 6px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: 
+    transform 0.25s cubic-bezier(0.2, 0.9, 0.4, 1.1),
+    box-shadow 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+/* Hover */
+.button:hover {
+  background-color: var(--border);
+  color: var(--color-heading);
+  transform: scale(1.02) translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
 @media (max-width: 768px) {
     .split-section {
         grid-template-columns: 1fr; /* Una sola columna en móvil */

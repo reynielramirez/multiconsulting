@@ -14,7 +14,7 @@
 			<div class="container">
 				<div class="items">
           {% for item in items %}
-            {% set referenced_entity = item.content['#node'] %}
+            {% set referenced_entity = item.content['#entity'] %}
             {% if referenced_entity %}
               <div class="product service">
                 <h3>

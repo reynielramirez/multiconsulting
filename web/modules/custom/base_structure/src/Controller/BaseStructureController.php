@@ -357,7 +357,7 @@ class BaseStructureController extends ControllerBase {
 			return ['#markup' => $this->t('Formulario no encontrado')];
 		}
 
-		$library['library'][] = 'base_structure/contact-styling';
+		$library['library'][] = 'base_structure/contacts-styling';
 
 		return [
 			'#theme' => 'contact_view',

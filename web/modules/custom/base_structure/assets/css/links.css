@@ -37,15 +37,14 @@
 }
 
 .site-thumb {
-    width: 150px;
-    height: 60px;
+    width: 200px;
     /* height: auto; */
     border-radius: 5px;
     /* object-fit: cover; */
     object-fit: contain;
-    border: 2px solid #58B4EE;
+    /* border: 2px solid #58B4EE; */
     max-width: 150px;
-    padding: .3rem;
+    /* padding: .3rem; */
 }
 
 .site-name {
