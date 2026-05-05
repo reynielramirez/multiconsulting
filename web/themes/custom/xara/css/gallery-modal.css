@@ -185,7 +185,7 @@
 }
 
 .modal-carousel-close {
-    background: rgba(0, 0, 0, 0.5);
+    background: transparent !important;
     border: none;
     font-size: 2rem;
     font-weight: 700;
@@ -204,6 +204,7 @@
 .modal-carousel-close:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: scale(1.1);
+    color: white;
 }
 
 /* Contenedor del carrusel */

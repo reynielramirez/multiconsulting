@@ -91,6 +91,10 @@ fieldset {
   padding: 0;
 }
 
+.breadcrumb {
+  margin: 10px 0;
+}
+
 .block-title,
 .view-title {
   margin-bottom: 0.8rem;
@@ -544,7 +548,7 @@ fieldset {
 #header .header-main {
   position: fixed;
   background: var(--primary);
-  z-index: 99999999;
+  z-index: 20;
   padding: 0.7rem 0;
   transition: padding 0.3s ease-out;
 }
@@ -1071,6 +1075,7 @@ img.svg-icon {
 
 /* Estado normal */
 .button {
+  font-size: 15px;
   background-color: var(--light);
   border: 2px solid var(--primary);
   border-radius: 6px;

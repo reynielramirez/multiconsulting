@@ -36,6 +36,9 @@
 							<div>
 								<div>
 									<p> {{ item.get('field_summary').value }} </p>
+									<p style="text-align: center;"><a class="button" href="{{ url('entity.node.canonical', {'node': item.id}) }}"> 
+										{{ 'Read more'|t }} 
+									</a></p>
 								</div>
 							</div>
 						</div>
