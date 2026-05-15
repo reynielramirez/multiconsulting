@@ -5,10 +5,13 @@ global-styling:
       css/style.css: {}
   js:
     js/xara.js: {}
+    js/inject-instagram.js: {}
   dependencies:
     - xara/aos-library
     - xara/owl-carousel-library
     - xara/fontawesome-library
+    - core/drupal
+    - core/jquery
 
 # Google Fonts from local
 googlefontslocal:
